@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PlantCare</title>
   <link rel="stylesheet" href="style.css" />
-</head> 
+</head>
 <body>
   <header>
     <img src="imagens/logo.png" alt="Logo PlantCare" class="logo" />
     <nav class="menu">
+      <button onclick="mostrarTodas()">Página Inicial</button>
       <button onclick="filtrar('alimenticia')">Alimentícias</button>
       <button onclick="filtrar('ornamental')">Ornamentais</button>
       <button onclick="filtrar('medicinal')">Medicinais</button>
@@ -18,50 +19,73 @@
 
   <main>
     <section class="grid-container" id="plantas">
-      <!-- Blocos de plantas -->
-      <div class="planta alimenticia">
-        <h3>Tomate</h3>
-        <p>Precisa de sol direto e rega diária.</p>
-      </div>
-      <div class="planta ornamental">
-        <h3>Rosa</h3>
-        <p>Floresce em climas amenos, solo fértil.</p>
+      <!-- Medicinais -->
+      <div class="planta medicinal">
+        <h3>🌱Babosa</h3>
+        <p><strong>Cuidados:</strong> Rega moderada e sol indireto.</p>
+        <p><strong>Adubo:</strong> Orgânico, húmus de minhoca.</p>
+        <p><strong>Curiosidade:</strong> Excelente para queimaduras e hidratação da pele.</p>
       </div>
       <div class="planta medicinal">
-        <h3>Babosa</h3>
-        <p>Boa para pele e cabelo, não regar demais.</p>
-      </div>
-      <div class="planta alimenticia">
-        <h3>Alface</h3>
-        <p>Cresce bem em sombra parcial e solo úmido.</p>
-      </div>
-      <div class="planta ornamental">
-        <h3>Lírio</h3>
-        <p>Prefere meia-sombra e rega moderada.</p>
+        <h3>🌿Hortelã</h3>
+        <p><strong>Cuidados:</strong> Regar com frequência, solo úmido.</p>
+        <p><strong>Adubo:</strong> Compostagem caseira.</p>
+        <p><strong>Curiosidade:</strong> Usada para melhorar a digestão e aliviar dores de cabeça.</p>
       </div>
       <div class="planta medicinal">
-        <h3>Hortelã</h3>
-        <p>Boa para chás e digestão. Cresce rápido.</p>
+        <h3>🌿 Capim-Santo (Cymbopogon citratus)</h3>
+        <p><strong>Cuidados:</strong> Gosta de sol pleno e solo bem drenado.</p>
+        <p><strong>Adubo:</strong> Esterco de curral bem curtido.</p>
+        <p><strong>Curiosidade:</strong> Tem propriedades digestivas, calmantes e anti-inflamatórias  e é muito usado para fazer chás calmantes, além de ser utilizado na culinária e na aromaterapia.</p>
       </div>
-      <div class="planta alimenticia">
-        <h3>Cenoura</h3>
-        <p>Precisa de solo profundo e regas frequentes.</p>
+
+      <!-- Ornamentais -->
+      <div class="planta ornamental">
+        <h3>🌴 Palmeira Washingtonia (Washingtonia robusta)</h3>
+        <p><strong>Cuidados:</strong> Sol pleno, resistente a climas secos.</p>
+        <p><strong>Adubo:</strong> Fosfatado e orgânico.</p>
+        <p><strong>Curiosidade:</strong> Pode alcançar até 25 metros de altura!</p>
       </div>
       <div class="planta ornamental">
-        <h3>Violeta</h3>
-        <p>Prefere luz indireta e solo úmido.</p>
+        <h3>🌼 Beijos-de-Sol (Impatiens hawkeri)</h3>
+        <p><strong>Cuidados:</strong> Gosta de meia sombra e rega frequente.</p>
+        <p><strong>Adubo:</strong> Rico em potássio e fósforo.</p>
+        <p><strong>Curiosidade:</strong> Também chamada de Beijo-turco, é muito popular em jardineiras e vasos suspensos.</p>
       </div>
-      <div class="planta medicinal">
-        <h3>Camomila</h3>
-        <p>Calmante natural. Cresce bem em sol direto.</p>
+      <div class="planta ornamental">
+        <h3>🌺 Antúrios (Anthurium andraeanum)</h3>
+        <p><strong>Cuidados:</strong> Prefere sombra e alta umidade.</p>
+        <p><strong>Adubo:</strong> Use adubo líquido para plantas floríferas (como NPK 10-10-10 ou 10-15-10) quinzenalmente.</p>
+        <p><strong>Curiosidade:</strong> Suas flores podem durar até 3 meses!</p>
+      </div>
+
+      <!-- Alimentícias -->
+      <div class="planta alimenticia">
+        <h3>🍊 Laranja Kinkan Variegata (Fortunella japonica 'Variegata')</h3>
+        <p><strong>Cuidados:</strong> Sol pleno, regas regulares.</p>
+        <p><strong>Adubo:</strong> NPK 20-05-20 e calcário dolomítico.</p>
+        <p><strong>Curiosidade:</strong> A variedade “Variegata” tem folhas manchadas de branco ou creme, o que a torna muito ornamental.</p>
+      </div>
+      <div class="planta alimenticia">
+        <h3>🥭 Pé de Manga (Mangifera indica)</h3>
+        <p><strong>Cuidados:</strong> Espaço amplo, sol pleno, poda anual.</p>
+        <p><strong>Adubo:</strong> Esterco de curral e NPK 10-10-10.</p>
+        <p><strong>Curiosidade:</strong> Possui muitas variedades: Palmer, Tommy Atkins, Espada, Rosa, entre outras. e pode viver mais de 100 anos e render centenas de mangas por ano.</p>
+      </div>
+      <div class="planta alimenticia">
+        <h3>🍈 Sapota (Manilkara zapota)</h3>
+        <p><strong>Cuidados:</strong> Sol direto, solo bem drenado.</p>
+        <p><strong>Adubo:</strong> Orgânico ou NPK 4-14-8.</p>
+        <p><strong>Curiosidade:</strong> Fruta rica em vitaminas A e C, muito comum no Norte e Nordeste.</p>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>Contato dos desenvolvedores: plantcare@contato.com</p>
-    <p>Encontre a sementeira mais próxima: Rua das Plantas, 123 - Igarassu - PE</p>
-    <p>Instagram da sementeira: <a href="https://instagram.com/sementeiraexemplo" target="_blank">@sementeiraexemplo</a></p>
+  
+    <p><strong>Encontre a sementeira mais próxima:</strong> Av. Alfredo Bandeira de Melo, 689 - Centro, Igarassu - PE, 53640-618</p>
+    <p><strong>Instagram da sementeira:</strong> <a href="https://www.instagram.com/santamelia.sementeira?utm_source=ig_web_button_share_sheet&igsh=MTdscjd6YzBoM211bg==" target="_blank">@santamelia.sementeira</a></p>
+    <strong>© Todos os direitos reservados</strong>
   </footer>
 
   <script src="script.js"></script>
