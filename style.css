@@ -12,26 +12,38 @@ header {
 
 .logo {
   max-width: 400px;
+  height: auto; 
 }
 
-.menu button {
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu button, .menu .menu-button-link {
   margin: 10px;
   padding: 10px 15px;
   border: none;
   background-color: #7ec850;
   color: white;
   font-weight: bold;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
   cursor: pointer;
   border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s;
 }
 
-.menu button:hover {
+.menu button:hover, .menu .menu-button-link:hover {
   background-color: #65a842;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   padding: 20px;
 }
@@ -42,10 +54,34 @@ header {
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .planta:hover {
   transform: scale(1.05);
+}
+
+.planta-info {
+    flex-grow: 1;
+}
+
+.btn-adquirir {
+  display: block;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #2e7d32;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-adquirir:hover {
+  background-color: #1b4d1d;
 }
 
 footer {
@@ -53,6 +89,7 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
+  margin-top: 20px;
 }
 
 footer a {
