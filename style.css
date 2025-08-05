@@ -96,3 +96,52 @@ footer a {
   color: #a5f1b6;
   text-decoration: none;
 }
+
+/* Estilos para a seção do mapa (com tamanho reduzido) */
+.mapa-container {
+  max-width: 600px; /* Largura do mapa */
+  margin: 25px auto; /* Centralizar o mapa */
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.mapa-container h3 {
+  color: #2e7d32;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.mapa-responsivo {
+  overflow: hidden;
+  padding-bottom: 75%; /* Ajustado para um mapa um pouco mais 'quadrado' */
+  position: relative;
+  height: 0;
+  border-radius: 8px;
+}
+
+.mapa-responsivo iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.btn-rota {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 20px;
+  background-color: #7ec850;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-rota:hover {
+  background-color: #65a842;
+}
