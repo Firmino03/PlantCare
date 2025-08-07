@@ -1,0 +1,8 @@
+CREATE TABLE plantas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    cuidados VARCHAR(100) NOT NULL,
+    adubos VARCHAR(300) NOT NULL,
+    curiosidades VARCHAR(300) NOT NULL,
+    link VARCHAR(2083) NOT NULL
+);
