@@ -15,7 +15,7 @@ Histórico de atualizações:
 |   Versão      |           Detalhes            |
 |---------------|-------------------------------|
 |    `v1.0.0`      |    - Criação do catálogo de plantas, filtro por categoria e redes sociais.
-
+|    `v1.1.0`      |    - Adição de mapa, integração com banco de dados e cadastro de plantas
 ## 📝 Fluxo de desenvolvimento
 
 Para contribuir com o **PlantCare**, siga estas etapas:
@@ -28,7 +28,7 @@ Para contribuir com o **PlantCare**, siga estas etapas:
 
     Utilize nomes que atendam aos Conventional Commits e descritivos como:
     - "feat/adicionando-login"
-    - "fix/corrigindo-erro-da-barra-de-hp"
+    - "fix/corrigindo-erro-de-filtro-de-pesquisa"
     - "docs/documentando-descrição-da-readme"
 
 3. Faça suas alterações e confirme-as: `git commit -m '<mensagem_commit>'`
