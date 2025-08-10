@@ -15,7 +15,7 @@ Histórico de atualizações:
 |   Versão      |           Detalhes            |
 |---------------|-------------------------------|
 |    `v1.0.0`      |    - Criação do catálogo de plantas, filtro por categoria e redes sociais.
-
+|    `v1.1.0`      |    - Adição de mapa, integração com banco de dados e cadastro de plantas
 ## 📝 Fluxo de desenvolvimento
 
 Para contribuir com o **PlantCare**, siga estas etapas:
